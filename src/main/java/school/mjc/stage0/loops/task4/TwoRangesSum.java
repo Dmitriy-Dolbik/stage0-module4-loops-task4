@@ -3,7 +3,7 @@ package school.mjc.stage0.loops.task4;
 public class TwoRangesSum {
     public static void main(String[] args) {
         TwoRangesSum twoRangesSum = new TwoRangesSum();
-        twoRangesSum.printSumOfTwoRanges(17,8);
+        twoRangesSum.printSumOfTwoRanges(10,10);
     }
     public void printSumOfTwoRanges(int numberToSkip, int lastInRow) {
         if (lastInRow < 0){
@@ -14,7 +14,7 @@ public class TwoRangesSum {
             int skippedSum = 0;
             int countedSum = 0;
             for (int i = 1; i <= lastInRow; i++) {
-                if (i == numberToSkip){
+                if (i <= numberToSkip){
                     skippedSum += i;
                     continue;
                 }
